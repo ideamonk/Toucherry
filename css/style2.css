@@ -1,0 +1,15 @@
+div span img {
+    width:200px;
+}
+div {
+    margin-bottom:20px;
+    border-bottom:2px solid #888;
+}
+div span{
+    display:inline-block;
+    width:22%;
+}
+.tough{
+    text-align:center;
+    float:right;
+}

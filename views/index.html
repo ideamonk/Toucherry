@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+		<title>TouchDraw Survey</title>
+		
+    <link type="text/css" href="/css/style.css" rel="stylesheet" />
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+		<script type="text/javascript" src="/js/touchy.js"></script>
+	</head>
+	<body id="index" onload="setupDrawing()">
+		<div id="wrapper">
+			<div id="loader">
+				<p>loading...</p>
+			</div>
+			<h2 id="titlebar">A Touchy Survey</h2>
+			<div id="canvasholder">
+				<div id="welcome">
+					<h3>Hi!</h3>
+					<p>
+						Got some time? <br />
+						Here is a touchy survey in four steps, all you need to do is touch &amp; trace :)
+					</p>
+					
+				</div>
+				<div id="form">
+					<div class="button black" id="butCircle">
+						<a href="#">circle</a>
+					</div> <br />
+					<div class="button black" id="butPenta">
+						<a href="#">pentagon</a>
+					</div> <br />
+					<div class="button black" id="butMap">
+						<a href="#">map</a>
+					</div>
+				</div>
+				<div id="thanks">
+					<img src="/images/thanks.jpg" alt="thank you!"/>
+					<br />
+					<p>
+						Thanks for the help, reload for another round, pass on to friends around :)
+					</p>
+				</div>
+			</div>
+			<div id="tabbar">
+				<div class="button black" id="butClear" style='display:none;'>
+					<a href="#">clear</a>
+				</div>
+				<div class="button black" id="butNext">
+					<a href="#">begin</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

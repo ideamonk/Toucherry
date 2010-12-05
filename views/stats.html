@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+
+		<title>TouchDraw Survey Stats</title>
+		
+		<link type="text/css" href="/css/style2.css" rel="stylesheet"></link>
+	</head>
+  <body>
+    <p> For more info, contact - Abhishek Mishra (ideamonk at gmail.com)</p>
+		<div id="wrapper">
+			{% for item in results %}
+				<div>
+					<span>
+						<img src="/img?step=1&uid={{ item.uid }}" title="{{ item.uid }}" title="{{ item.ua }}"/>
+					</span>
+					<span>
+						<img src="/img?step=2&uid={{ item.uid }}" title="{{ item.uid }}"/>
+					</span>
+					<span>
+						<img src="/img?step=3&uid={{ item.uid }}" title="{{ item.uid }}"/>
+					</span>
+					<span class="tough">
+						found {{ item.toughest }} tough on an {{ item.cat }}
+					</span>
+				</div>
+			{% endfor %}
+		</div>
+	</body>
+</html>
